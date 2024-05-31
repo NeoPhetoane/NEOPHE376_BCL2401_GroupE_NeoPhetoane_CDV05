@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <!-- Link to Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <title>Neo Phetoane's Portfolio</title>
+    <!-- Link to CSS for styling-->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
+   <!-- Main content of the webpage -->
+
+    <!-- Header section with navigation menu -->
   <body>
     <header id="header">
       <nav>
@@ -19,51 +25,59 @@
       </nav>
     </header>
 
+    <!-- Home section introducing the developer to the viewer -->
     <section id="home">
-      <h1>Oh hello 👀</h1>
-      <p>I am Neo Phetoane, a Software Engineering Student.</p>
+      <h1>Neo Phetoane Here!</h1>
+      <p>Hello, I am Neo Phetoane, a Software Engineering Student.</p>
       <p>Nice to see you here</p>
     </section>
-
+<!-- About Me section providing more details about the developer -->
     <section id="about">
       <h2>About Me</h2>
       <p>
         I am a Software Engineering Student, aspiring to be a world class Web
-        Developer. I have been learning to code with CodeSpace and have become
-        proficient in HTML and CSS and am currently working on JavaScript and
-        React. I chose this field because of my desire to find out how and why
+        Developer. I am learning to code with CodeSpace and so far it has been a fun adventure full of novelty everyday. I am
+        proficient in HTML, CSS and JavaScript and am currently learning the framework React. I chose this field because of my desire to find out how and why
         things come to be. Technology is the future and I am curious about how
-        that future is unfolding..
+        that future is unfolding.
       </p>
     </section>
-
+ <!-- Projects section showcasing the developer's work -->
     <section id="projects">
       <h2>Projects</h2>
       <h6>Here are some of my projects you can view...</h6>
+
+      <!-- Container for projects -->
       <div class="project">
+
+        <!-- Project 1 -->
         <h3>Bank Landing Page</h3>
         <p>An attractive landing page for Cache bank.</p>
+        <p class="language">has HTML CSS </p>
         <img src="images/Bank-landing-page.png" id="landing-page" />
 
         <a
           href="https://github.com/NeoPhetoane/NEOPHE376_BCL2401_GroupE_NeoPhetoaneSDF11.git"
           >Have a look on GitHub</a
         >
+        <!-- Project 2 -->
         <h3>List App</h3>
         <p>
-          An application taht allows the user to enter in list items of their
+          An application that allows the user to enter in list items of their
           choice and remove them when no longer necessary.
         </p>
-        <p></p>
+        <p class="language">has HTML CSS Tailwind JavaScript</p>
         <img src="images/List-App.png" id="list-app" />
         <a href="https://mobile-app-time-to-chow.netlify.app/"
           >Have a look on Netlify</a
         >
+        <!-- Project 3 -->
         <h3>In your Business</h3>
         <p>
             An website that allows small business owners to showcase their craft
             and for locals to locate them.
           </p>
+          <p class="language">has HTML CSS </p>
         <img src="images/In-your-bizz.png" id="in-your-bizz" />
         
         <a
@@ -73,10 +87,12 @@
       </div>
     </section>
 
+    <!-- Contact section with links to email and GitHub -->
     <section id="contact">
       <h2>Contact</h2>
-
+<!-- Email link with envelope icon -->
       <a href="mailto:phetoaneneo4@gmail.com"><i class="fas fa-envelope"></i></a>
+<!-- GitHub link with Font Awesome GitHub icon -->
       <a href="https://github.com/NeoPhetoane"><i class="fab fa-github"></i></a>
     </section>
   </body>

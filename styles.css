@@ -1,94 +1,135 @@
-
-
 body {
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: darkgrey;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #007bff;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    margin: 1rem 0;
-  }
-  
-  p {
-    margin: 0.5rem 0;
-  }
-  
-  img {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: olive;
-    padding: 1rem 2rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
-    margin: 0 1rem;
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 2rem 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #home {
-    text-align: center;
-    color: olive;
-    background-color: rgb(198, 193, 193);
-  }
+  margin: 0;
+  padding: 0;
+  /* Sets the default font and removes default margin and padding from the body */
+}
 
-  #about {
-    text-align: center;
-    color: olive;
-    background-color: rgb(198, 193, 193);
-  }
-  
-  #projects {
-    background-color: rgb(198, 193, 193);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: olive;
-  }
-  
-  .project {
-    width: calc(66% - 2rem);
-    margin: 1rem;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-  }
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  /* Sets default link color and removes underline from links */
+}
 
-  .project a {
-    color: green;
-    hover: olive;
-  }
-  #contact {
-    background-color:rgb(198, 193, 193) ;
-    justify-items: center;
-  }
+a:hover {
+  color: purple;
+  /* Changes link color to purple on hover */
+}
 
+h1, h2, h3 {
+  margin: 1rem 0;
+  /* Sets consistent margins for headings */
+}
 
+p {
+  margin: 0.5rem 0;
+  /* Sets consistent margins for paragraphs */
+}
 
+img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  /* Makes images responsive, removes inline-block gap, and adds bottom margin */
+}
+
+/* Header Styles */
+header {
+  background-color: olive;
+  padding: 1rem 2rem;
+  /* Styles the header with a background color and padding */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* Removes list bullets, displays items in a row, and spaces them out */
+}
+
+nav li {
+  margin: 0 1rem;
+  /* Adds horizontal margin between navigation items */
+}
+
+/* Section Styles */
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  /* Adds padding and a bottom border to sections */
+}
+
+#home {
+  text-align: center;
+  color: olive;
+  background-color: rgb(198, 193, 193);
+  /* Centers text, sets text color, and background color for the home section */
+}
+
+#home h1 {
+  opacity: 1;
+  animation: fadeIn 5s ease-in-out;
+  font-size: 35px;
+  /* Sets initial opacity, applies fade-in animation, and adjusts font size for the main heading */
+}
+
+#about {
+  text-align: center;
+  color: olive;
+  background-color: purple;
+  /* Centers text, sets text color, and background color for the about section */
+}
+
+#about h2 {
+  color: black;
+  /* Changes the color of the heading in the about section */
+}
+
+#projects {
+  background-color: rgb(198, 193, 193);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: olive;
+  /* Sets background color, flexbox properties, and text color for the projects section */
+}
+
+.project {
+  width: 66%;
+  margin: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  /* Styles individual project containers with width, margin, border, padding, and rounded corners */
+}
+
+.language {
+  color: purple;
+  font-size: small;
+  /* Styles the text describing the languages used in projects */
+}
+
+.project a {
+  color: green;
+  /* Sets the link color within projects */
+}
+
+#contact {
+  background-color: olive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Styles the contact section with background color and flexbox properties to center content */
+}
+
+#contact a {
+  padding: 10px;
+  /* Adds padding around the contact links */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  /* Defines the fade-in animation for elements */
+}
